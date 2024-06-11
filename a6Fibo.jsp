@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Demo
-    Created on : 31 Mar, 2024, 7:32:55 PM
-    Author     : HP
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
