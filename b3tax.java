@@ -1,18 +1,11 @@
 itax.java(interface)..
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package b3.tax;
 
 import java.rmi.*;
 
-/**
- *
- * @author HP
- */
+
 public interface ITax extends Remote{
     double ComputeTax(double Salary) throws RemoteException;
 }
@@ -20,11 +13,6 @@ public interface ITax extends Remote{
 
 itaxclent.java...
 
-  /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package b3.tax;
 
 import java.rmi.NotBoundException;
@@ -33,10 +21,7 @@ import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
 
-/**
- *
- * @author HP
- */
+
 public class ITaxClient {
     public static void main(String[] args) throws RemoteException, NotBoundException {
         Registry reg =LocateRegistry.getRegistry(18888);
@@ -59,20 +44,13 @@ public class ITaxClient {
 
 iitaxServer.java..
 
-  /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package b3.tax;
 
 import java.rmi.RemoteException;
 import java.rmi.server.*;
 
-/**
- *
- * @author HP
- */
+
 public class ITaxServer extends UnicastRemoteObject implements ITax{
     public ITaxServer() throws RemoteException{
     super();
@@ -102,11 +80,7 @@ public class ITaxServer extends UnicastRemoteObject implements ITax{
 
 StartServer.java..
 
-  /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package b3.tax;
 
 import java.rmi.AlreadyBoundException;
@@ -116,10 +90,7 @@ import java.rmi.registry.LocateRegistry;
 
 import java.rmi.registry.Registry;
 
-/**
- *
- * @author HP
- */
+
 public class StartServer {
     public static void main(String[] args) throws RemoteException, AlreadyBoundException  {
         ITaxServer it  = new ITaxServer();
