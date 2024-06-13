@@ -1,12 +1,4 @@
 firstpage.jsp...
-
-  <%-- 
-    Document   : firstPage
-    Created on : 3 Apr, 2024, 5:41:03 PM
-    Author     : HP
---%>
-<%@page import="com.Student"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,8 +14,7 @@ firstpage.jsp...
             <jsp:setProperty name="std" property="sem" value="${param.sem}"/>
         </jsp:useBean>
         <h2><a href="secondPage.jsp">View Student Details</a></h2>
-                     
-                     
+                   
                      
     </body>
 </html>
@@ -32,11 +23,7 @@ firstpage.jsp...
     index.html
 
     <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>Student INfo..</title>
@@ -76,11 +63,7 @@ and open the template in the editor.
 
   second.jsp..
 
-<%-- 
-    Document   : secondPage
-    Created on : 3 Apr, 2024, 6:16:31 PM
-    Author     : HP
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -117,19 +100,12 @@ and open the template in the editor.
 
     student.java..
 
-    /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
 package com;
 
 import java.io.Serializable;
 
-/**
- *
- * @author HP
- */
+
 public class Student implements Serializable{
     private String regNo;
     private String name;
