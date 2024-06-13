@@ -5,10 +5,6 @@ package b8mvc;
 
 import java.util.Scanner;
 
-/**
- *
- * @author HP
- */
 public class B8MVC {
 
     
@@ -39,17 +35,9 @@ public class B8MVC {
 
 StudentController.java
 
-  /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
 package b8mvc;
 
-/**
- *
- * @author HP
- */
 public class StudentCntroller {
     private StudentModel model;
     private StudentView view;
@@ -67,17 +55,8 @@ public class StudentCntroller {
 
 StudentModel.java
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package b8mvc;
 
-/**
- *
- * @author HP
- */
 public class StudentModel {
 
     private String rolno, name;
@@ -174,17 +153,8 @@ public class StudentModel {
 
 StudentView.java
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package b8mvc;
 
-/**
- *
- * @author HP
- */
 public class StudentView {
     public void displayResult(String rNo, String sName, int m1,int m2,int m3, String result, String grade){
         System.out.println("---------------------------------RESULT------------------------------");
